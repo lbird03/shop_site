@@ -1,0 +1,31 @@
+﻿* {
+    background-color: #b9ffff
+}
+
+input {
+    background-color: white;
+}
+
+option {
+    background-color: white
+}
+
+h1 {
+    text-align: center
+}
+
+h4 {
+    text-align: center
+}
+
+img {
+    width: 45px
+}
+
+table {
+    border: 1px solid black;
+}
+
+td {
+    border: 1px solid black;
+}

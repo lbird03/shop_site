@@ -1,0 +1,24 @@
+﻿body {
+    background-color: #b9ffff;
+}
+
+.checkout {
+    background: url(imgs/checkout/checkout.gif);
+    width: 100px;
+    height: 85px;
+    border: none;
+    text-align: center;
+}
+
+table {
+    border: 1px solid black;
+}
+
+td {
+    border: 1px solid black;
+}
+
+h4 {
+    text-align: center;
+}
+

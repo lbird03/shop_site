@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="../productPage.css" />
+    <script defer src="../cart.js"></script>
+</head>
+<body>
+    <form action="https://localhost:8090/" method="post" name="productForm" >
+        <div class="submitForm">
+            <h1>Wheat Belly</h1>
+            <img src="../imgs/e-books/health/WheatBelly.jpg" />
+            <h3>Wheat - The Real Wonder Food for the 21st Century.</h3>
+            <p>Price:   $0.99</p>
+            <div class="submitForm" style="display: flex">
+                <p>Quantity:</p>
+                <input title="" name="quantity" value="0" pattern="[0-8]" required="required"/>
+            </div>
+            <br />
+            <input type="button" value="Purchase" onclick="submitProduct()"/>
+
+            <input type="hidden" name="price" value="0.99" />
+            <input type="hidden" name="name" value="Wheat Belly" />
+            <input type="hidden" name="id" value="0" />
+        </div>
+    </form>
+</body>
+</html>

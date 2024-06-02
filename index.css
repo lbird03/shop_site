@@ -1,0 +1,116 @@
+﻿body {
+    background-color: #2224A2;
+}
+
+.banner {
+    width: 100%;
+    height: 150px;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-image: url("imgs/home/bg_head2.png")
+}
+
+.heading {
+    width: 150px;
+    height: 150px;
+    border: 3px;
+    border-style: none solid none;
+}
+
+.heading h2 {
+    font-family: 'Script MT';
+    font: bold;
+    font-size: 27px;
+    text-align: center;
+    background-color: none;
+}
+
+
+
+
+.menu {
+    width: 75%;
+    height: 40px;
+    margin: 0 auto;
+    border: 1px solid black;
+    display: flex;
+    background-color: #2224A2;
+    position: absolute;
+    z-index: 1;
+    left: 12.5%;
+}
+
+.submenu p {
+    background-color: #2224A2;
+    font-family: Arial;
+    font-size: 11px;
+    color: white;
+}
+
+.submenu {
+    color: white;
+    text-align: center;
+    background-color: #2224A2;
+    border: 1px solid rgb(0,0,0);
+    width: 12.5%;
+}
+
+.submenu:hover a {display: block}
+
+.submenu a {
+    display: none;
+    color: white;
+    background-color: #2224A2;
+    padding: 5px;
+
+}
+
+.submenu a:hover {
+    background-color: rgb(60,139,255);
+}
+
+
+.content {
+    display: flex;
+    margin-top: 80px;
+}
+
+.div3 {
+    border: 2px solid black;
+    width: 20%;
+    display: block;
+    justify-content: center;
+    position: relative;
+}
+
+
+
+
+.div4 {
+    background-color: #CCCCCC;
+    border: 2px solid black;
+    margin: 0 auto;
+    width: 50%;
+    
+
+}
+
+.div4 p {
+    font-weight: bolder;
+}
+
+.div4 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+}
+
+.div5 {
+    border: 2px solid black;
+    background-color: white;
+    width: 20%;
+
+}

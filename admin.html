@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <form action="http://localhost:8090/process.php?XDEBUG_SESSION_START=test2" method="post" enctype="multipart/form-data" >
+        <div style="text-align: center">
+            <h1>Administrative Blog Form</h1>
+            <div style= "display: inline-flex; align-content:center; border: 1px solid black;">
+                Name: <input type="text" name="author"/><br />
+                Title: <input type="text" name="title"/><br />
+                Image: <input type="file" name="image"/><br />
+            </div>
+
+            <h2>Enter Blog Below</h2>
+            <textarea name="text" style="width: 500px; height: 300px"></textarea>
+            <div>
+                <input type="reset" value="Reset" name="reset_button" />
+                <input type="submit" value="Submit" name="submit_button" />
+            </div>
+        </div>
+    </form>
+</body>
+</html>

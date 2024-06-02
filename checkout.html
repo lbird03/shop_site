@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="checkout.css" />
+    <script defer src="../cart.js"></script>
+
+</head>
+<body onload="showCart()">
+    <h1>Enter Customer Info Below</h1>
+    <form action="https://localhost:8090/" method="post" name="checkoutForm">
+        <div style="text-align: center">
+            <div style= "display: inline-block; text-align: left;">
+                First Name: <input type="text" name="fname" title="" pattern="[A-Z][a-z]+([ ][A-Z][a-z]+)*" required="required"><br />
+                Last Name: <input type="text" name="lname" title="" pattern="[A-Z][a-z]+([ ][A-Z][a-z]+)*" required="required"/><br />
+                Email: <input type="text" name="email" title="" pattern="(.+@[a-zA-Z_]+?.[a-zA-Z]{2,6}" required="required"/><br />
+                Address 1: <input type="text" name="address1" required="required" /><br />
+                Address 2: <input type="text" name="address2" /><br />
+                City: <input type="text" name="city" title="" required="required" pattern="[A-Z][a-z]+([ ][A-Z][a-z]+)*"/><br />
+                State: <input type="text" name="state" title="" pattern="[A-Z][A-Z]" required="required"/><br />
+                ZIP: <input type="text" name="zip" title="" required="required" pattern="[0-9]{5}"/><br />
+                Country: <input type="text" name="country" title="" required="required"/><br />
+                Phone: <input type="text" name="phone" title="" required="required" pattern="(\([0-9]{3}\)[0-9]{3}-[0-9]{4})|([0-9]{3}\-[0-9]{3}\-[0-9]{4})|([0-9]{10})"/><br />
+                Fax: <input type="text" name="fax" title="" pattern="((\([0-9]{3}\)[0-9]{3}-[0-9]{4})|([0-9]{3}\-[0-9]{3}\-[0-9]{4})|([0-9]{10}))*" /><br />
+                <input type="checkbox" name="mail_button" /> Check here to be added to the mailing list.<br /><br />
+            </div>
+
+            <h2>Shopping Cart</h2>
+            <table align="center" id="table"></table>
+        
+            <h2>Enter Credit Card Information Below</h2><br />
+            <div style= "display: inline-block; text-align: left;">
+                <input type="radio" name="card_radio" value="MC" checked="checked" /> <img src="imgs/checkout/mc.jpg" /> MasterCard<br />
+                <input type="radio" name="card_radio" value="Visa" /> <img src="imgs/checkout/visa.jpg" /> Visa<br />
+                <input type="radio" name="card_radio" value="AmEx" /> <img src="imgs/checkout/amex.jpg" /> American Express<br />
+                <input type="radio" name="card_radio" value="Discover" /> <img src="imgs/checkout/discover.jpg" /> Discover<br /><br />
+            </div>
+            <h3>Enter Card Number and Expiration</h3><br />
+            <div style= "display: inline-block; text-align: left;">
+                Credit Card Number: <input type="text" name="cc_no" required="required" pattern="[0-9]{16}" /><br />
+                Expiration Month: <select name="exp_mo">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                  </select><br />
+                Expiration Year: <select name="exp_yr">
+                                    <option>2024</option>
+                                    <option>2025</option>
+                                    <option>2026</option>
+                                    <option>2027</option>
+                                    <option>2028</option>
+                                    <option>2029</option>
+                                    <option>2030</option>
+                                    <option>2031</option>
+                                    <option>2032</option>
+                                    <option>2033</option>
+                                 </select><br /><br />
+                </div>
+                <br />
+            <!--<input type="submit" value="Buy Now!" name="submit_button"/>-->
+                <input type="button" value="Buy Now!" onclick="makePurchase()"/>
+                <input type="reset" value="Reset" name="reset_button" />
+            
+
+        </div>
+    </form>
+    <h4><a href="store_index.html">Return to Previous</a></h4>
+    
+</body>
+</html>

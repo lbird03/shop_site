@@ -1,0 +1,46 @@
+﻿body {
+    background-color: #b9ffff;
+}
+
+.submitForm {
+    justify-content: center;
+    text-align: center
+}
+
+h1 {
+}
+
+h3 {
+    font-family: 'Lucida Calligraphy';
+    color: maroon;
+}
+
+p {
+    margin-top: auto;
+    font-weight: bold
+}
+
+.submitForm input[type=submit] {
+    background: url(imgs/home/atc.png) no-repeat;
+    height: 35px;
+    width: 130px;
+    border: none
+}
+
+.submitForm input[type=text] {
+    height: 20px;
+    width: 100px;
+    margin-left: 10px;
+}
+
+.submitForm img {
+    background-color: #b9ffff;
+}
+
+
+.submitForm input[type=button] {
+    background: url(imgs/home/BuyNow.png) no-repeat;
+    height: 50px;
+    width: 180px;
+    border: none
+}
